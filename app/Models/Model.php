@@ -145,7 +145,7 @@ abstract class Model
 
         $this->query($deleteStatement);
         $this->statement->execute();
-        
+
         return $this->statement->rowCount() > 0;
     }
 }
