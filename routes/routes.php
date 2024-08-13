@@ -11,11 +11,11 @@ Router::get('/users/create', [UserController::class,'create'])->name('user.creat
 Router::post('/users', [UserController::class,'store'])->name('user.store');
 
 // User Show
-// Router::get('/users/show/{id}', [UserController::class,'show'])->name('user.show');
+Router::get('/users/show/{id}', [UserController::class,'show'])->name('user.show');
 
-// // User Update
-// Router::get('/users/edit/{id}', [UserController::class,'edit'])->name('user.edit');
-// Router::put('/users/{id}', [UserController::class,'update'])->name('user.update');
+// User Update
+Router::get('/users/edit/{id}', [UserController::class,'edit'])->name('user.edit');
+Router::put('/users/{id}', [UserController::class,'update'])->name('user.update');
 
-// // User Delete
-// Router::delete('/users/{id}', [UserController::class,'destroy'])->name('user.destroy');
+// User Delete
+Router::delete('/users/{id}', [UserController::class,'destroy'])->name('user.destroy');
