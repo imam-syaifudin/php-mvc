@@ -5,7 +5,6 @@ namespace App\Controllers;
 use Exception;
 use App\Models\User;
 use App\Helpers\Session;
-use App\Helpers\JsonResponse;
 use App\Controllers\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
